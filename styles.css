@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 1s ease-in-out;
+}
+
+.calculator {
+    border-radius: 10px; /* Bo tròn các góc của máy tính */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff; /* Thêm màu nền cho máy tính */
+    padding: 20px; /* Thêm khoảng đệm để nhìn đẹp hơn */
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: white;
+    text-align: right;
+    padding: 0 10px;
+    font-size: 2.5em;
+    border-radius: 10px; /* Bo tròn các góc của màn hình */
+}
+
+button {
+    height: 60px;
+    font-size: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bo tròn các góc của nút bấm */
+    cursor: pointer;
+    background-color: #4CAF50; /* Màu nền của nút bấm */
+    color: white; /* Màu chữ của nút bấm */
+}
+
+button:active {
+    background: #45a049; /* Màu nền khi nhấn nút bấm */
+}
+
+.operator {
+    background-color: #ff8c00; /* Màu nền của nút operator */
+}
+
+.equal-sign {
+    background-color: #4caf50; /* Màu nền của nút bằng */
+}
+
+.function {
+    background-color: #8e44ad; /* Màu nền của nút function */
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
